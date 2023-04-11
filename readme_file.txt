@@ -1,7 +1,5 @@
 Here, I used Django Framework
 
-* In django It support the "WSGI" and "ASGI" methods. but FLask didn't have the ASGI .
-* These both are used for communicating the web server with applications.
 * Compared with Flask It have high security level,because it have the inbuild security system.
 * This is used for "FullStack Developement". It have lot of inbuild functionality.
 * It is supported for large kind of project.
@@ -20,7 +18,7 @@ Then models is connected to the serializer,so the data automatically stored in t
 
 JSON:
 
-API: "postdetails"
+API: https://127.0.0.1:8001/postdetails
 
 Input1:
 {
@@ -42,17 +40,22 @@ Input2:
 }
 
 
-API : "getdetails"
+API : https://127.0.0.1:8001/getdetails
 Input:
 {"car_no":"TN13L9876"}
 
-API: "deletedetail"
+API: https://127.0.0.1:8001/deletedetail
 Input:
 {"car_no":"TN16L4563"}
 
-API: "updatedetail"
+API: https://127.0.0.1:8001/updatedetail
 Input:
 {"car_no":"TN13L9876"}
+
+Run the project
+* python manage.py makemigrations
+* python manage.py migrate
+* python manage.py runserver
 
 
 
